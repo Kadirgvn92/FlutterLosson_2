@@ -15,7 +15,10 @@ class MyApp extends StatelessWidget {
           colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
           useMaterial3: true,
         ),
-        home: const MyHomePage(title: 'Flutter Ana Sayfa', money: 15,));
+        home: const MyHomePage(
+          title: 'Flutter Ana Sayfa',
+          money: 15,
+        ));
   }
 }
 
@@ -78,14 +81,14 @@ class _MyHomePageState extends State<MyHomePage> {
                   _decrementCounter, // _decrementCounter fonksiyonunu ekleyin
               tooltip: 'Decrement',
               backgroundColor: Colors.amber,
-              child: const Icon(Icons.remove),
+              child: const Text('Çıkar'),
             ),
           ),
           FloatingActionButton(
             onPressed: _incrementCounter,
             tooltip: 'Increment',
             backgroundColor: Colors.amber,
-            child: const Icon(Icons.add),
+            child: const Text('Ekle'),
           ),
         ],
       ),
