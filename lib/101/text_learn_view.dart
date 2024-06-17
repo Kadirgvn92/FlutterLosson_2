@@ -1,8 +1,12 @@
 import 'package:flutter/material.dart';
 
-class TextLearn extends StatelessWidget {
+class TextLearnView extends StatelessWidget {
+  const TextLearnView({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return Text("Kadir");
+    return const Scaffold(
+      body: Text("Kadir"),
+    );
   }
 }
